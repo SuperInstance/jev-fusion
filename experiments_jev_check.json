@@ -1,0 +1,35 @@
+{
+ "ok": true,
+ "controls": [
+  {
+   "control": "two_plus_two_four",
+   "want": "true",
+   "got": "true",
+   "ok": true
+  },
+  {
+   "control": "two_plus_two_five",
+   "want": "false",
+   "got": "false",
+   "ok": true
+  },
+  {
+   "control": "water_is_dry",
+   "want": "false",
+   "got": "false",
+   "ok": true
+  },
+  {
+   "control": "paris_france",
+   "want": "true",
+   "got": "true",
+   "ok": true
+  },
+  {
+   "control": "paris_spain",
+   "want": "false",
+   "got": "false",
+   "ok": true
+  }
+ ]
+}

@@ -14,6 +14,18 @@ ceiling. **Everything downstream depends on whether that survives.**
   System-1 reader sees a representation. If the gap to oracle does not close, the paradigm is
   dead and we saved ourselves the GPU. *Control: the same cells judged from a shuffled
   neighbour assignment.*
+- **A1b. CLUSTERED vs SCATTERED — DONE (`EXP5-NOTE.md`).** The steel-man predicted a sparse
+  per-cell signal would lose *specifically* where errors cluster. **It did not.** The judge
+  is at or below the free statistic in the clustered column at every budget measured, by ~3x
+  the margin it manages on scattered — where one row is an *exact* tie. Narrow, and on a
+  two-seed basis, and stated as such.
+- **A1c. THE SEAM TASK — IN FLIGHT (`exp6_seam_task.py`).** The experiment that would settle
+  whether A1b matters in reality. Clustered error as a *mirrored seam* rather than an
+  artificial blob: both sides are wrong in the same direction, so neither disagrees with its
+  own neighbours and the corruption is visible only by comparing LEFT to RIGHT. The control is
+  the same strip corrupted *randomly*, which preserves the amount of noise and destroys the
+  cross-seam signal. **Win on seam only = the judge reads cross-seam structure. Win on both =
+  it is reading the amount of corruption and the seam framing is decoration.**
 - **A2. Measure the crossover.** At what budget does the judge overtake free heuristics? If
   never, stop. *Control: sweep budget to the point where oracle saturates.*
 - **A3. Is there a task where the judge wins big?** It may be excellent at coarse routing and

@@ -1,0 +1,8 @@
+  judge verified 5/5
+
+  THE SEAM TASK -- clustered error as the NORM, with a mirrored-disagreement control
+
+   budget     scene    oracle     judge     noise   judge-noise
+        6      seam    0.0750    0.0766    0.0755      +0.0011
+        6    random    0.0877    0.0911    0.0901      +0.0010
+       12      seam    0.0700    0.0734    0.0707      +0.0026

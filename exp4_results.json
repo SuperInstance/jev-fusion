@@ -1,0 +1,32 @@
+{
+ "4": {
+  "oracle": 0.1472,
+  "judge": 0.1538,
+  "worst_noise": 0.1533,
+  "random": 0.1582
+ },
+ "8": {
+  "oracle": 0.1329,
+  "judge": 0.1425,
+  "worst_noise": 0.1444,
+  "random": 0.1514
+ },
+ "16": {
+  "oracle": 0.1078,
+  "judge": 0.1278,
+  "worst_noise": 0.1276,
+  "random": 0.1364
+ },
+ "24": {
+  "oracle": 0.0852,
+  "judge": 0.1132,
+  "worst_noise": 0.1176,
+  "random": 0.1225
+ },
+ "40": {
+  "oracle": 0.0496,
+  "judge": 0.0773,
+  "worst_noise": 0.0899,
+  "random": 0.0944
+ }
+}

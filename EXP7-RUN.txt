@@ -1,0 +1,22 @@
+  judge verified 5/5
+
+  THE FREE STATISTIC MADE EXACTLY BLIND
+
+  The field is built by bilinear upsampling, so every cell is locally consistent BY
+  CONSTRUCTION and a local-disagreement statistic has literally nothing to read.
+  In the SPLIT arm the left and right of the seam disagree; in the CLEAN arm they do
+  not. If the judge wins SPLIT and not CLEAN, it reads cross-seam structure.
+
+   budget      arm     judge     noise    oracle   judge-noise
+        6    split    0.0089    0.0165    0.0040      -0.0076
+        6    clean    0.0036    0.0096    0.0040      -0.0060
+       12    split    0.0232    0.0325    0.0243      -0.0093
+       12    clean    0.0071    0.0153    0.0059      -0.0082
+
+  THE CONTROL
+  -----------
+  split arm (cross-seam structure present): -0.0076, -0.0093
+  clean arm (no cross-seam structure):     -0.0060, -0.0082
+  The judge wins the argument ONLY IF split is meaningfully below clean.
+
+  -> exp7_results.json
